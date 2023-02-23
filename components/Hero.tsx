@@ -121,7 +121,7 @@ function Hero({}: Props) {
               alt="hero image"
               width={608}
               height={735}
-              className="w-auto rounded-md"
+              className=""
             />
           </motion.div>
         </div>

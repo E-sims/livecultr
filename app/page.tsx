@@ -6,6 +6,7 @@ import { Inter } from "@next/font/google"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import LogoClouds from "@/components/LogoClouds"
+import Footer from "@/components/Footer"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -52,7 +53,7 @@ export default async function Home() {
       <LogoClouds />
       {/* About */}
 
-      {/* */}
+      <Footer />
     </main>
   )
 }
