@@ -12,6 +12,15 @@ module.exports = {
         "8xl": "96rem",
         "9xl": "128rem",
       },
+      colors: {
+        primary: {
+          DEFAULT: "#313748",
+          900: "#181c24",
+        },
+        sand: {
+          DEFAULT: "#FED0AB",
+        },
+      },
     },
   },
   plugins: [

@@ -7,6 +7,7 @@ import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import LogoClouds from "@/components/LogoClouds"
 import Footer from "@/components/Footer"
+import TeamIntro from "@/components/TeamIntro"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -27,7 +28,7 @@ export default async function Home() {
   const projects = await getProjects()
 
   return (
-    <main className="bg-[#313748] relative flex flex-col w-full h-full min-h-screen overflow-hidden">
+    <main className="bg-primary relative flex flex-col w-full h-full min-h-screen overflow-hidden">
       {/*<div className="flex flex-row w-auto">
         <h1>Live Cultr Projects</h1>
 
@@ -51,6 +52,7 @@ export default async function Home() {
       <Header />
       <Hero />
       <LogoClouds />
+      <TeamIntro />
       {/* About */}
 
       <Footer />

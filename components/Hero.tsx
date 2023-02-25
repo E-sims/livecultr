@@ -3,12 +3,13 @@
 import React from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 type Props = {}
 
 function Hero({}: Props) {
   return (
-    <div className="relative isolate overflow-hidden bg-[#313748]">
+    <div className="relative isolate overflow-hidden h-full bg-primary">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -57,8 +58,8 @@ function Hero({}: Props) {
             y2="638.714"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stopColor="#4F46E5" />
-            <stop offset={1} stopColor="#80CAFF" />
+            <stop stopColor="#485168" />
+            <stop offset={1} stopColor="#75819f" />
           </linearGradient>
         </defs>
       </svg>
@@ -84,21 +85,21 @@ function Hero({}: Props) {
               </span>
             </a>
           </div>
-          <h1 className="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            We&apos;re here to create memorable experiences
+          <h1 className="mt-10 text-4xl font-bold text-slate-50 sm:text-6xl lg:text-7xl">
+            Helping you put the pieces together
           </h1>
-          <p className="mt-6 text-xl leading-8 text-gray-300">
+          <p className="mt-6 text-2xl leading-8 text-slate-300">
             We&apos;re the agency that pushes boundaries to find the most
             original, most thoughtful, and most compelling ways to fulfill your
             vision.
           </p>
           <div className="mt-10 flex items-center gap-x-6">
-            <a
+            <Link
               href="#"
-              className="rounded-md bg-gradient-to-tr from-[#f17f72] via-[#FED0AB] to-[#FED0AB] px-3.5 py-1.5 text-base font-semibold uppercase leading-7 text-[#313748] shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
+              className="rounded-xl bg-gradient-to-tr from-[#e5887e] via-[#FED0AB] to-[#FED0AB] px-4 py-2 text-lg font-semibold capitalize leading-7 text-[#313748] shadow-sm hover:bg-[#FED0AB] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FED0AB]"
             >
-              Get In Touch
-            </a>
+              Get Started
+            </Link>
           </div>
         </motion.div>
         <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-32">
@@ -117,10 +118,10 @@ function Hero({}: Props) {
             className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none"
           >
             <Image
-              src="/images/minified/Hero-2.min.webp"
+              src="/svgs/puzzle.svg"
               alt="hero image"
-              width={608}
-              height={735}
+              width={508}
+              height={635}
               className=""
             />
           </motion.div>

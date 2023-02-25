@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react"
-import { SocialIcon } from "react-social-icons"
 import { motion, AnimatePresence } from "framer-motion"
 import Logo from "./Logo"
 import Link from "next/link"
@@ -54,7 +53,7 @@ function Header({}: Props) {
   }
 
   return (
-    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-md bg-[#313748]/40">
+    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-md bg-[#313748]/40 border-b-slate-200/10 border-b-2">
       <div className="flex p-5 justify-between max-w-7xl mx-auto items-center">
         <motion.div
           initial={{
@@ -77,17 +76,17 @@ function Header({}: Props) {
         </motion.div>
         <motion.div
           initial={{
-            x: -500,
-            opacity: 0,
+            y: -100,
+            opacity: 0.5,
             scale: 0.5,
           }}
           animate={{
-            x: 0,
+            y: 0,
             opacity: 1,
             scale: 1,
           }}
           transition={{
-            duration: 1.5,
+            duration: 1,
           }}
           className="hidden lg:flex flex-row items-center justify-center gap-4"
         >
@@ -96,7 +95,7 @@ function Header({}: Props) {
               <Link
                 key={link.id}
                 href={link.href}
-                className="uppercase hidden md:inline-flex text-md md:text-lg font-medium text-slate-300"
+                className="capitalize hidden md:inline-flex text-md md:text-lg font-medium text-slate-300"
               >
                 {link.text}
               </Link>
