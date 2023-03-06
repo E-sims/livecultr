@@ -2,14 +2,11 @@ import { client } from "../lib/sanity.client"
 import { groq } from "next-sanity"
 import { PortableText } from "@portabletext/react"
 import Image from "next/image"
-import { Inter } from "@next/font/google"
 import Header from "@/components/Header"
 import Hero from "@/components/Hero"
 import LogoClouds from "@/components/LogoClouds"
 import Footer from "@/components/Footer"
 import TeamIntro from "@/components/TeamIntro"
-
-const inter = Inter({ subsets: ["latin"] })
 
 function getProjects() {
   return client.fetch(groq`
@@ -48,14 +45,10 @@ export default async function Home() {
         })}
       </div>
       */}
-
-      <Header />
       <Hero />
       <LogoClouds />
       <TeamIntro />
       {/* About */}
-
-      <Footer />
     </main>
   )
 }

@@ -53,7 +53,7 @@ function Header({}: Props) {
   }
 
   return (
-    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-md bg-[#313748]/40 border-b-slate-200/10 border-b-2">
+    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-md bg-primary/60 border-b-slate-200/10 border-b-2">
       <div className="flex p-5 justify-between max-w-7xl mx-auto items-center">
         <motion.div
           initial={{

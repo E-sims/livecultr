@@ -9,7 +9,7 @@ type Props = {}
 
 function Hero({}: Props) {
   return (
-    <div className="relative isolate overflow-hidden h-full bg-primary">
+    <div className="relative isolate overflow-hidden h-full bg-primary -mt-20">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -96,7 +96,7 @@ function Hero({}: Props) {
           <div className="mt-10 flex items-center gap-x-6">
             <Link
               href="#"
-              className="rounded-xl bg-gradient-to-tr from-[#e5887e] via-[#FED0AB] to-[#FED0AB] px-4 py-2 text-lg font-semibold capitalize leading-7 text-[#313748] shadow-sm hover:bg-[#FED0AB] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FED0AB]"
+              className="rounded-full bg-gradient-to-tr from-[#e5887e] via-[#FED0AB] to-[#FED0AB] px-4 py-2 text-lg font-semibold capitalize leading-7 text-[#313748] shadow-sm hover:bg-[#FED0AB] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FED0AB]"
             >
               Get Started
             </Link>
