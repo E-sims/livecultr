@@ -1,6 +1,12 @@
+import { Inter } from "next/font/google"
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
-import "../style/globals.css"
+import "../../style/globals.css"
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+})
 
 export default function RootLayout({
   children,
@@ -9,12 +15,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>
+      <body className={`${inter.variable} font-inter bg-primary`}>
         <Header />
         {children}
         <Footer />

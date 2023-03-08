@@ -4,12 +4,13 @@ import React from "react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { BoltIcon } from "@heroicons/react/24/outline"
 
 type Props = {}
 
 function Hero({}: Props) {
   return (
-    <div className="relative isolate overflow-hidden h-full bg-primary -mt-20">
+    <div className="relative isolate overflow-hidden h-screen bg-primary w-full">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -63,7 +64,7 @@ function Hero({}: Props) {
           </linearGradient>
         </defs>
       </svg>
-      <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:py-40 lg:px-8">
+      <div className="mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:flex lg:py-28 lg:px-8">
         <motion.div
           initial={{
             x: -500,
@@ -80,7 +81,7 @@ function Hero({}: Props) {
         >
           <div className="mt-24 sm:mt-32 lg:mt-16">
             <a href="#" className="inline-flex space-x-6">
-              <span className="rounded-full bg-[#FED0AB]/10 px-3 py-1 text-sm font-semibold leading-6 text-[#FED0AB] ring-1 ring-inset ring-indigo-500/20">
+              <span className="rounded-full bg-sand/10 px-3 py-1 text-sm font-semibold leading-6 text-sand ring-1 ring-inset ring-sand/20">
                 A Digital Agency
               </span>
             </a>
@@ -96,13 +97,14 @@ function Hero({}: Props) {
           <div className="mt-10 flex items-center gap-x-6">
             <Link
               href="#"
-              className="rounded-full bg-gradient-to-tr from-[#e5887e] via-[#FED0AB] to-[#FED0AB] px-4 py-2 text-lg font-semibold capitalize leading-7 text-[#313748] shadow-sm hover:bg-[#FED0AB] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FED0AB]"
+              className="rounded-full flex flex-row items-center justify-center gap-2 bg-gradient-to-tr from-[#e5887e] via-[#FED0AB] to-[#FED0AB] px-4 py-2 text-lg font-semibold capitalize leading-7 text-[#313748] shadow-sm hover:bg-[#FED0AB] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FED0AB]"
             >
+              <BoltIcon className="text-primary h-4 w-auto" />
               Get Started
             </Link>
           </div>
         </motion.div>
-        <div className="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-32">
+        <div className="mx-auto mt-16 flex justify-center max-w-2xl sm:mt-24 lg:ml-10 lg:mt-0 lg:mr-0 lg:max-w-none lg:flex-none xl:ml-32">
           <motion.div
             initial={{
               x: 500,
@@ -122,7 +124,7 @@ function Hero({}: Props) {
               alt="hero image"
               width={508}
               height={635}
-              className=""
+              className="object-cover"
             />
           </motion.div>
         </div>

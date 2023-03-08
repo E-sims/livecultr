@@ -53,7 +53,7 @@ function Header({}: Props) {
   }
 
   return (
-    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-md bg-primary/60 border-b-slate-200/10 border-b-2">
+    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-md bg-primary/70 border-b-slate-200/10 border-b-2">
       <div className="flex p-5 justify-between max-w-7xl mx-auto items-center">
         <motion.div
           initial={{
@@ -120,7 +120,10 @@ function Header({}: Props) {
           className="lg:hidden flex flex-row items-center text-slate-300 cursor-pointer"
         >
           {open ? (
-            <XMarkIcon className="text-slate-300 h-6 w-6" onClick={isClose} />
+            <XMarkIcon
+              className="text-slate-300 h-6 w-6 p-1 rounded-full bg-slate-600"
+              onClick={isClose}
+            />
           ) : (
             <Bars3BottomRightIcon
               className="text-slate-300 h-6 w-6"
@@ -159,6 +162,7 @@ function Header({}: Props) {
                     <Link
                       href={link.href}
                       className="uppercase inline-flex text-2xl md:text-[2vw] font-medium text-slate-300 py-7"
+                      onClick={isClose}
                     >
                       {link.text}
                     </Link>

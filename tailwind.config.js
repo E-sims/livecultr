@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: [`var(--font-inter)`, "sans-serif"],
+      },
       spacing: {
         "8xl": "96rem",
         "9xl": "128rem",
