@@ -6,7 +6,7 @@ type Props = {}
 
 function ProjectCard({}: Props) {
   return (
-    <article className="text-slate-100 p-10 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-slate-600 hover:opacity-100 opacity-40 transition-opacity duration-150">
+    <article className="text-slate-100 p-10 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-slate-600 hover:opacity-100 opacity-40 transition-opacity duration-150 cursor-pointer overflow-hidden">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}
@@ -22,7 +22,7 @@ function ProjectCard({}: Props) {
           className="w-32 h-32 lg:h-[200px] lg:w-[200px] rounded-full object-cover object-center"
         />
       </motion.div>
-      <div className="px-0 md:px-10">
+      <div className="px-0 md:px-10 flex flex-col items-center justify-center">
         <h4 className="text-4xl font-light">Company Name</h4>
         <p className="font-semibold text-2xl mt-1">Project Name</p>
         <div className="flex space-x-2 my-2">
@@ -38,8 +38,8 @@ function ProjectCard({}: Props) {
           </div>
           {/* Tech used */}
         </div>
-        <p className="uppercase py-5 text-slate-300">Project Date</p>
-        <p className="text-lg">
+        <p className="uppercase py-5 text-slate-300">December 2022</p>
+        <p className="text-lg text-center lg:max-w-lg">
           &quot;Working with Live Cultr really allowed me to bring my vision to
           life. The team is always helpful! Not to mention super talented.”
         </p>

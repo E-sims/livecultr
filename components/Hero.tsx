@@ -5,12 +5,13 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { BoltIcon } from "@heroicons/react/24/outline"
+import LogoClouds from "./LogoClouds"
 
 type Props = {}
 
 function Hero({}: Props) {
   return (
-    <div className="relative isolate overflow-hidden h-screen bg-primary w-full">
+    <div className="relative isolate overflow-hidden min-h-screen bg-primary w-full">
       <svg
         className="absolute inset-0 -z-10 h-full w-full stroke-white/10 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
@@ -129,6 +130,7 @@ function Hero({}: Props) {
           </motion.div>
         </div>
       </div>
+      <LogoClouds />
     </div>
   )
 }

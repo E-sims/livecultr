@@ -3,9 +3,9 @@ import { groq } from "next-sanity"
 import { PortableText } from "@portabletext/react"
 import Image from "next/image"
 import Hero from "@/components/Hero"
-import LogoClouds from "@/components/LogoClouds"
 import TeamIntro from "@/components/TeamIntro"
 import RecentProjects from "@/components/RecentProjects"
+import Services from "@/components/Services"
 
 function getProjects() {
   return client.fetch(groq`
@@ -47,16 +47,15 @@ export default async function Home() {
       <section id="hero" className="snap-start">
         <Hero />
       </section>
-      <section id="logos" className="snap-center">
-        <LogoClouds />
-      </section>
       <section id="team" className="snap-center">
         <TeamIntro />
       </section>
       <section id="projects" className="snap-center">
         <RecentProjects />
       </section>
-      {/* About */}
+      <section id="services" className="snap-center">
+        <Services />
+      </section>
     </div>
   )
 }
