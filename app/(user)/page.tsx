@@ -7,6 +7,10 @@ import TeamIntro from "@/components/TeamIntro"
 import RecentProjects from "@/components/RecentProjects"
 import Services from "@/components/Services"
 
+export const metadata = {
+  title: "Web design and marketing",
+}
+
 function getProjects() {
   return client.fetch(groq`
     *[_type == "project"]{

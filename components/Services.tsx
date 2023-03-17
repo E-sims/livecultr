@@ -19,7 +19,7 @@ const services = [
       "During development, we follow best practices with technical detail. We provide you the flexibility to continue with our recurring marketing plan packages.",
   },
   {
-    id: "01",
+    id: "03",
     title: "Marketing",
     description:
       "Every business needs marketing! Don't be left behind by your competition. We focus on monitoring your market as well as competitors.",
