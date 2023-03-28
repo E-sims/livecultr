@@ -33,11 +33,11 @@ function TeamIntro({}: Props) {
           </li>
           <li className="col-span-1 md:col-span-4 p-6 md:rounded-lg bg-primary flex flex-col items-center justify-center relative shadow-md">
             <div className="absolute top-6 left-4 w-[20%] py-2 rounded-full bg-sand/20" />
-            <p className="text-xl text-sand pb-8">
+            <p className="text-3xl text-sand pb-8 w-xl">
               Our team of digital creatives are ready to take on your projects -
               from ideation to design and development.
             </p>
-            <p className="text-xl text-sand">
+            <p className="text-3xl text-sand">
               We are driven by curiosity and joy in our work. We allow you to
               focus on the business while we focus on you.
             </p>
