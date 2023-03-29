@@ -19,6 +19,11 @@ export const config = {
             type: "string",
           },
           {
+            name: "description",
+            title: "Description",
+            type: "string",
+          },
+          {
             name: "slug",
             title: "Slug",
             type: "slug",

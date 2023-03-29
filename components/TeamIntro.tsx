@@ -9,7 +9,7 @@ function TeamIntro({}: Props) {
       <div className="mx-auto max-w-7xl md:px-4">
         <ul className="grid grid-cols-1 md:grid-cols-6 grid-flow-row md:gap-2 overflow-hidden">
           <li className="col-span-1 md:col-span-3 flex items-center md:rounded-lg justify-start bg-sand px-6 py-8 min-h-[25vh] shadow-md">
-            <h2 className="text-5xl font-semibold text-primary max-w-md">
+            <h2 className="text-5xl font-semibold text-primary max-w-lg lg:max-w-md">
               A team of passionate creatives
             </h2>
           </li>
@@ -31,13 +31,13 @@ function TeamIntro({}: Props) {
               className="h-full w-auto object-cover object-center"
             />
           </li>
-          <li className="col-span-1 md:col-span-4 p-6 md:rounded-lg bg-primary flex flex-col items-center justify-center relative shadow-md">
-            <div className="absolute top-6 left-4 w-[20%] py-2 rounded-full bg-sand/20" />
-            <p className="text-3xl text-sand pb-8 w-xl">
+          <li className="col-span-1 md:col-span-4 p-6 gap-6 md:py-12 md:rounded-lg bg-primary flex flex-col items-center justify-center relative shadow-md">
+            <div className="place-self-start w-[12%] py-2 rounded-full bg-sand/80" />
+            <p className="text-3xl text-slate-50 w-xl">
               Our team of digital creatives are ready to take on your projects -
               from ideation to design and development.
             </p>
-            <p className="text-3xl text-sand">
+            <p className="text-3xl text-slate-50">
               We are driven by curiosity and joy in our work. We allow you to
               focus on the business while we focus on you.
             </p>
