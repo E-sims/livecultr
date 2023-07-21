@@ -5,7 +5,7 @@ type Props = {}
 
 function TeamIntro({}: Props) {
   return (
-    <div className="min-h-screen w-full mx-auto flex flex-row items-center justify-center md:py-28 bg-slate-100">
+    <div className="min-h-screen w-full mx-auto flex flex-row items-center justify-center md:py-28 bg-primary-50">
       <div className="mx-auto max-w-7xl md:px-4">
         <ul className="grid grid-cols-1 md:grid-cols-6 grid-flow-row md:gap-2 overflow-hidden">
           <li className="col-span-1 md:col-span-3 flex items-center md:rounded-lg justify-start bg-sand px-6 py-8 min-h-[25vh] shadow-md">

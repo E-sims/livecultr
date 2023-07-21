@@ -25,9 +25,9 @@ const menuLinks = [
     href: "/contact",
   },
   {
-    id: "blog",
-    text: "Blog",
-    href: "/blog",
+    id: "about",
+    text: "About",
+    href: "/about",
   },
 ]
 
@@ -53,7 +53,7 @@ function Header({}: Props) {
   }
 
   return (
-    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-lg bg-primary/70 border-b-slate-200/10 border-b-2">
+    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-lg bg-primary/90 border-b-slate-200/10 border-b-2">
       <div className="flex p-5 justify-between max-w-7xl mx-auto items-center">
         <motion.div
           initial={{
@@ -71,8 +71,10 @@ function Header({}: Props) {
           }}
           className="flex flex-row items-center"
         >
-          <Logo />
-          <p className="text-xl font-semibold text-[#cbd5e1] p-0">Live Cultr</p>
+          <Link href="/">
+            <Logo />
+          </Link>
+          <p className="text-xl font-semibold text-primary-50 p-0">Live Cultr</p>
         </motion.div>
         <motion.div
           initial={{
@@ -121,7 +123,7 @@ function Header({}: Props) {
         >
           {open ? (
             <XMarkIcon
-              className="text-slate-300 h-6 w-6 p-1 rounded-full bg-slate-600"
+              className="text-slate-300 h-6 w-6 p-1 rounded-full bg-primary"
               onClick={isClose}
             />
           ) : (

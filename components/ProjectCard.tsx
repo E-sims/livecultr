@@ -6,7 +6,7 @@ type Props = {}
 
 function ProjectCard({}: Props) {
   return (
-    <article className="text-slate-100 p-10 flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[500px] md:w-[600px] xl:w-[900px] snap-center bg-slate-600 hover:opacity-100 opacity-40 transition-opacity duration-150 cursor-pointer overflow-hidden">
+    <article className="text-slate-100 p-10 flex flex-col rounded-lg items-center space-y-7 min-w-[33vw] aspect-[3/4] snap-center bg-slate-600 hover:opacity-100 opacity-40 transition-opacity duration-150 cursor-pointer overflow-hidden">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         transition={{ duration: 1.2 }}

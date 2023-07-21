@@ -80,7 +80,7 @@ function Hero({}: Props) {
           }}
           className="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl lg:pt-8"
         >
-          <div className="mt-24 sm:mt-32 lg:mt-16">
+          <div className="mt-16 sm:mt-24 lg:mt-0">
             <a href="#" className="inline-flex space-x-6">
               <span className="rounded-full bg-sand/10 px-3 py-1 text-sm font-semibold leading-6 text-sand ring-1 ring-inset ring-sand/20">
                 A Digital Agency
@@ -88,7 +88,10 @@ function Hero({}: Props) {
             </a>
           </div>
           <h1 className="mt-10 text-4xl font-bold text-slate-50 sm:text-6xl lg:text-7xl">
-            Helping you put the pieces together
+            Going beyond the{" "}
+            <span className="bg-gradient-to-r from-sand to-peach bg-clip-text text-transparent">
+              ordinary
+            </span>
           </h1>
           <p className="mt-6 text-2xl leading-8 text-slate-300">
             We&apos;re the agency that pushes boundaries to find the most
@@ -121,7 +124,7 @@ function Hero({}: Props) {
             className="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none"
           >
             <Image
-              src="/svgs/puzzle.svg"
+              src="/images/social-graphic.webp"
               alt="hero image"
               width={508}
               height={635}
