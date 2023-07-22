@@ -1,7 +1,9 @@
 import HeroV2 from "@/components/HeroV2"
-import TeamIntro from "@/components/TeamIntro"
 import RecentProjects from "@/components/RecentProjects"
 import Services from "@/components/Services"
+import AppBubbles from "@/components/AppBubbles"
+import ThreeSteps from "@/components/ThreeSteps"
+import CtaPanel from "@/components/CtaPanel"
 
 export const metadata = {
   title: "Web design and marketing",
@@ -9,19 +11,13 @@ export const metadata = {
 
 export default async function Home() {
   return (
-    <div className="bg-primary mx-auto snap-y snap-mandatory z-0">
-      <section id="hero" className="snap-start">
+    <div className="bg-primary mx-auto z-0">
         <HeroV2 />
-      </section>
-      <section id="team" className="snap-center">
-        <TeamIntro />
-      </section>
-      <section id="projects" className="snap-center">
-        {/* <RecentProjects /> */}
-      </section>
-      <section id="services" className="snap-center">
+        <AppBubbles />
         <Services />
-      </section>
+        <ThreeSteps />
+        <CtaPanel />
+        {/* <RecentProjects /> */}
     </div>
   )
 }

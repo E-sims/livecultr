@@ -5,12 +5,11 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { BoltIcon } from "@heroicons/react/24/outline"
-import LogoClouds from "./LogoClouds"
 import Avatars from "./blocks/elements/Avatars"
 
 type Props = {}
 
-function Hero({}: Props) {
+function HeroV2({}: Props) {
   return (
     <div className="bg-gradient-to-b from-sand to-primary-50">
     <section className="py-10 sm:py-16 lg:py-24">
@@ -28,15 +27,14 @@ function Hero({}: Props) {
           transition={{
             duration: 1,
           }}>
-                    <h1 className="text-4xl font-bold text-primary sm:text-6xl lg:text-7xl">
-                        Transform Your Business, With
+                    <h1 className="text-4xl font-bold text-primary tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
+                        Transform your business with
                         <div className="relative inline-flex">
-                            <span className="absolute inset-x-0 bottom-0 border-b-[30px] border border-primary-100"></span>
-                            <h1 className="relative text-4xl font-bold text-primary sm:text-6xl lg:text-7xl">AI Automations.</h1>
+                        <span className="bg-gradient-to-tr from-peach via-peach to-sand/80 bg-clip-text text-transparent">Ai Automations.</span>
                         </div>
                     </h1>
 
-                    <p className="mt-8 text-base text-primary sm:text-xl">The potential for AI and automation to transform businesses is enormous. We specialize in leveraging these innovative technologies to help businesses work smarter, faster, and more efficiently.</p>
+                    <p className="mt-8 text-base text-primary sm:text-xl md:max-w-3xl lg:max-w-full">The potential for AI and automation to transform businesses is enormous. We specialize in leveraging these innovative technologies to help businesses work smarter, faster, and more efficiently.</p>
 
                     <div className="mt-10 flex items-center space-x-8">
                         
@@ -71,4 +69,4 @@ function Hero({}: Props) {
   )
 }
 
-export default Hero
+export default HeroV2

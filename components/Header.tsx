@@ -53,8 +53,8 @@ function Header({}: Props) {
   }
 
   return (
-    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-lg bg-primary/90 border-b-slate-200/10 border-b-2">
-      <div className="flex p-5 justify-between max-w-7xl mx-auto items-center">
+    <header className="sticky top-0 w-full mx-auto z-20 backdrop-blur-lg bg-primary/90 border-b-primary-200/10 border-b-1">
+      <div className="flex p-4 justify-between max-w-7xl mx-auto items-center">
         <motion.div
           initial={{
             y: -100,
@@ -97,7 +97,7 @@ function Header({}: Props) {
               <Link
                 key={link.id}
                 href={link.href}
-                className="capitalize hidden md:inline-flex text-md md:text-lg font-medium text-slate-300"
+                className="capitalize hidden md:inline-flex text-sm font-semibold leading-6 text-primary-300"
               >
                 {link.text}
               </Link>
@@ -119,16 +119,16 @@ function Header({}: Props) {
           transition={{
             duration: 1.5,
           }}
-          className="lg:hidden flex flex-row items-center text-slate-300 cursor-pointer"
+          className="lg:hidden flex flex-row items-center text-primary-300 cursor-pointer"
         >
           {open ? (
             <XMarkIcon
-              className="text-slate-300 h-6 w-6 p-1 rounded-full bg-primary"
+              className="text-primary-300 h-6 w-6 p-1 rounded-full bg-primary"
               onClick={isClose}
             />
           ) : (
             <Bars3BottomRightIcon
-              className="text-slate-300 h-6 w-6"
+              className="text-primary-300 h-6 w-6"
               onClick={isOpen}
             />
           )}
@@ -163,7 +163,7 @@ function Header({}: Props) {
                   >
                     <Link
                       href={link.href}
-                      className="uppercase inline-flex text-2xl md:text-[2vw] font-medium text-slate-300 py-7"
+                      className="uppercase inline-flex text-2xl md:text-[2vw] font-medium text-primary-300 py-7"
                       onClick={isClose}
                     >
                       {link.text}

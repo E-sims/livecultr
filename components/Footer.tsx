@@ -62,10 +62,10 @@ const navigation = {
 
 function Footer({}: Props) {
   return (
-    <footer className="bg-primary-900 w-full">
+    <footer className="bg-primary-950 w-full">
       <div className="mx-auto max-w-7xl overflow-hidden py-20 px-6 sm:py-24 lg:px-8">
         <nav
-          className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12"
+          className="columns-2 flex justify-center space-x-6"
           aria-label="Footer"
         >
           {navigation.main.map((item) => (
