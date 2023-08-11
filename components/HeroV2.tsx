@@ -30,7 +30,7 @@ function HeroV2({}: Props) {
                     <h1 className="text-4xl font-bold text-primary tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl">
                         Transform your business with
                         <div className="relative inline-flex">
-                        <span className="bg-gradient-to-tr from-peach via-peach to-sand/80 bg-clip-text text-transparent">Ai Automations.</span>
+                        <span className="bg-gradient-to-tr from-peach via-peach to-sand/80 bg-clip-text text-transparent">Ai Automations</span>
                         </div>
                     </h1>
 

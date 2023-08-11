@@ -8,5 +8,5 @@ export default async function Project({ params }: Props) {
   const slug = params.project
   const project = await getProject(slug)
 
-  return <div>Project Here</div>
+  return <div><h1>{project.name}</h1></div>
 }

@@ -28,9 +28,9 @@ const ContactForm = (props: Props) => {
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 pb-20 sm:pt-32 lg:static lg:py-48 lg:px-8">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-white/5 lg:w-1/2">
+            <div className="absolute inset-y-0 left-0 -z-10 w-full overflow-hidden ring-1 ring-primary/5 lg:w-1/2">
               <svg
-                className="absolute inset-0 h-full w-full stroke-gray-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+                className="absolute inset-0 h-full w-full stroke-primary-700 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
                 aria-hidden="true"
               >
                 <defs>
@@ -48,7 +48,7 @@ const ContactForm = (props: Props) => {
                 <svg
                   x="100%"
                   y={-1}
-                  className="overflow-visible fill-gray-800/20"
+                  className="overflow-visible fill-primary-800/20"
                 >
                   <path d="M-470.5 0h201v201h-201Z" strokeWidth={0} />
                 </svg>
@@ -78,19 +78,19 @@ const ContactForm = (props: Props) => {
                     y2="203.355"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stopColor="#4F46E5" />
-                    <stop offset={1} stopColor="#80CAFF" />
+                    <stop stopColor="#ff80ee" />
+                    <stop offset={1} stopColor="#FED0AB" />
                   </linearGradient>
                 </defs>
               </svg>
             </div>
-            <h2 className="text-3xl font-bold tracking-tight text-white">
+            <h2 className="text-3xl font-bold tracking-tight text-primary">
               We&apos;re here when you need us
             </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-300">
-              Send us your project details. Our team will contact you ASAP.
+            <p className="mt-6 text-3xl font-bold tracking-tight text-primary-50 sm:text-4xl">
+              Send us your project details. Get in touch.
             </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-slate-300">
+            <dl className="mt-10 space-y-4 text-base leading-7 text-primary-300">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Telephone</span>

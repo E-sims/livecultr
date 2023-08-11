@@ -3,6 +3,9 @@ import Footer from "@/components/Footer"
 import Header from "@/components/Header"
 import "../../style/globals.css"
 import { previewData } from "next/headers"
+import Script from "next/script"
+import ChatwootWidget from "@/components/ChatwootWidget"
+
 
 export const metadata = {
   title: {
@@ -34,6 +37,7 @@ export default function RootLayout({
           {/* <div className="sticky bottom-4 left-4 bg-teal-400 text-teal-900 rounded-full px-4 py-2 z-50 opacity-50 max-w-fit">
             Preview Mode
           </div> */}
+          <ChatwootWidget />
         </body>
       </html>
     )
@@ -48,6 +52,7 @@ export default function RootLayout({
           {/* <div className="absolute bottom-4 left-4 bg-red-300 text-red-900 rounded-full px-4 py-2 z-50 opacity-50 max-w-fit">
             Not in Preview Mode
           </div> */}
+          <ChatwootWidget />
         </body>
       </html>
     )
